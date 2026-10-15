@@ -159,16 +159,6 @@ Prices and rates change over time, so your output will differ.
 - The demo is tied to Dubai and AED to PKR; the tools would need small changes for other cities or currencies.
 - A run makes roughly 8 to 11 LLM calls, which matters on free-tier quotas.
 
-## Troubleshooting
-
-| Problem | Fix |
-|---|---|
-| `Key '$defs' is not supported in schema, ignoring` | A harmless warning from the Gemini integration; the nested task schema is still sent correctly. |
-| `GOOGLE_API_KEY is missing` | Add the key to `.env` (local) or Kaggle Secrets, then re-run the keys cell. |
-| Weather returns an error | A new OpenWeather key may need some time to activate. |
-| `429` or quota errors | The Gemini free quota is used up. Wait for the reset or switch to a model with a higher free limit. |
-| `ModuleNotFoundError` | Run `pip install -r requirements.txt`, then restart the kernel. |
-
 ## Roadmap
 
 - Make the tools and prompts configurable for any city and currency
